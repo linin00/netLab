@@ -1,0 +1,10 @@
+if [[ $# -ne 2 ]]; then
+	echo "error: method have 2 args"
+	echo "usage: source $0 <conf path> <plugins path>"
+	echo "example: source $0 /home/linin/test/conf /home/linin/test/plugins"
+elif [[ ! -d $1 || ! -d $2 ]]; then
+	echo "error: path does not exist"
+else
+	export CNI_CONF=$1
+	export CNI_PATH=$2
+fi

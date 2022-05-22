@@ -32,3 +32,5 @@ network:
 EOF
 
 netplan apply
+
+exit 0
