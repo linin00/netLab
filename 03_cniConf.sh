@@ -14,12 +14,11 @@ fi
 
 cat > "$CNI_CONF/cni0.conf" << EOF
 {
-	"cniVersion": "0.3.1",
+	"cniVersion": "0.4.0",
 	"name": "cni0",
 	"type": "bridge",
 	"bridge": "cni0",
 	"isDefaultGateway": true,
-	"hairpinMode": false,
 	"ipMasq": true,
 	"ipam": {
 		"type": "host-local",
